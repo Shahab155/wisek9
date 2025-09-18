@@ -57,7 +57,7 @@ export default function MoreDropdown() {
   }, [isOpen]);
 
   const items = [
-    { href: "/blogs", label: "Blogs", Icon: FaBloggerB },
+    { href: "https://wisek9.co.uk/blogs", label: "Blogs", Icon: FaBloggerB },
     { href: "https://wisek9.co.uk/careers", label: "Careers", Icon: AiOutlineCarryOut },
     { href: "https://wisek9.co.uk/quote", label: "Get Quote", Icon: BsChatRightQuote },
     { href: "https://wisek9.co.uk/training", label: "Training", Icon: PiStudentFill },

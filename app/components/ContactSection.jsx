@@ -43,14 +43,15 @@ const ContactSection = () => {
     const ctx = gsap.context(() => {
       gsap.from(cardsRef.current, {
         opacity: 0,
-        y: 40,
-        duration: 0.8,
+        y: 30,
+        duration: 0.7,
         stagger: 0.12,
         ease: "power3.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 85%",
+          start: "top bottom",
           toggleActions: "play none none none",
+          invalidateOnRefresh: true,
         },
       });
 
@@ -61,7 +62,9 @@ const ContactSection = () => {
         ease: "back.out(1.4)",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 85%",
+          start: "top bottom",
+          toggleActions: "play none none none",
+          invalidateOnRefresh: true,
         },
       });
     }, sectionRef);
@@ -73,9 +76,17 @@ const ContactSection = () => {
     <section
       ref={sectionRef}
       id="Contact"
-      className="bg-[#0f172a] py-16 px-6 md:px-16"
+      className="bg-[#0f172a] py-16 px-4 md:px-16"
       style={{ willChange: "transform, opacity" }}
     >
+      <div className="text-center max-w-5xl mx-auto py-10">
+        <h2 className="text-3xl md:text-5xl font-primary text-primary ">
+          Get In Touch With Us
+        </h2>
+        <p className="text-xl text-gray-500 leading-relaxed mt-2">
+         Ready to secure your premises? Contact our expert team for a personalized <br />security consultation and quote.
+        </p>
+      </div>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Column 1 */}
@@ -206,6 +217,7 @@ const ContactSection = () => {
                 <p className="text-white flex items-center gap-2 mb-2">
                   <FaMapMarkedAlt className="text-primary" /> Camberley, Surrey
                 </p>
+               
                 <Link
                   href="https://www.google.com/maps"
                   target="_blank"
@@ -240,7 +252,7 @@ const ContactSection = () => {
                 <p className="text-gray-400 mb-4">Stay updated with our latest security insights</p>
               </div>
 
-              <div className="space-y-3 mt-6">
+              <div className="mt-6 flex flex-col gap-3">
                 <Link href={"https://wisek9.co.uk/quote/"} target="_blank" rel="noopener noreferrer">
                 <button className="w-full px-6 py-3 bg-red-500 rounded-full text-white font-semibold hover:bg-red-600 transition">
                   Get Free Quote

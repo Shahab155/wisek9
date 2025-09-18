@@ -49,6 +49,7 @@ const BlogSection = () => {
       date: "18 Sept, 2025",
       alt: "Frontend development illustration",
       link: "https://wisek9.co.uk/london-security-services/",
+      badge: "Featured"
     },
     {
       id: 2,
@@ -59,6 +60,7 @@ const BlogSection = () => {
       date: "15 Sept, 2025",
       alt: "Clean code tips illustration",
       link: "https://wisek9.co.uk/event-security-surrey/",
+      badge:"Popular"
     },
     {
       id: 3,
@@ -69,6 +71,7 @@ const BlogSection = () => {
       date: "12 Sept, 2025",
       alt: "UI/UX design illustration",
       link: "https://wisek9.co.uk/cleaners-for-offices-uk/",
+      badge:"Trending"
     },
     {
       id: 4,
@@ -79,6 +82,7 @@ const BlogSection = () => {
       date: "10 Sept, 2025",
       alt: "GSAP animation illustration",
       link: "https://wisek9.co.uk/uks-common-security-threats-2025/",
+      badge:"Expert Analysis"
     },
   ];
 
@@ -112,8 +116,8 @@ const BlogSection = () => {
                   height={300}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <span className="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full">
-                  Blog
+                <span className="absolute top-3 left-3 bg-primary font-primary text-white text-xs px-3 py-1 rounded-full">
+                {card.badge}
                 </span>
                 <div className="absolute bottom-3 left-3 flex items-center gap-2 text-white text-xs bg-black/50 px-2 py-1 rounded-md">
                   <FaRegClock size={14} />
