@@ -66,7 +66,7 @@ export default function MoreDropdown() {
   return (
     <li
       ref={containerRef}
-      className="group relative"
+      className="group relative hidden md:flex"
       onMouseEnter={() => isDesktop && setIsOpen(true)}
       onMouseLeave={() => isDesktop && setIsOpen(false)}
     >

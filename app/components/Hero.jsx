@@ -76,8 +76,8 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-center gap-6 relative z-10 text-center px-4 py-16 max-w-7xl mx-auto">
-        <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight">
+      <div className="flex flex-col items-center gap-6 relative z-10 text-center px-4 py-8 md:py-16 max-w-7xl mx-auto">
+        <h1 className="hero-title text-5xl  md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight">
           SIA-licensed Security Guard Supplier
         </h1>
         <p className="hero-subtitle mt-4 text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-200 max-w-4xl">
@@ -88,7 +88,7 @@ export default function Hero() {
           <Link href="https://wisek9.co.uk" target="_blank" rel="noopener noreferrer">
             <button
               ref={ctaRef}
-              className="hero-btn inline-block bg-primary hover:bg-red-800 text-white text-lg sm:text-xl md:text-2xl font-semibold px-8 sm:px-10 md:px-12 py-3 md:py-4 rounded-full shadow-xl transition-colors duration-300"
+              className="hero-btn inline-block bg-primary hover:bg-red-800 text-white text-xl md:text-2xl font-semibold px-10 md:px-12 py-4 rounded-full shadow-xl transition-colors duration-300"
             >
               Visit wisek9.co.uk
             </button>

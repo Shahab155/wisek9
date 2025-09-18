@@ -126,7 +126,7 @@ export default function AboutSection() {
       </div>
 
       {/* ----------- PART 3: Why Choose Us ----------- */}
-      <div className="bg-gray-100 rounded-3xl shadow-sm max-w-7xl mx-auto p-10 md:p-16 text-center fade-up">
+      <div className="bg-gray-50 rounded-3xl shadow-sm max-w-7xl mx-auto p-10 md:p-16 text-center fade-up">
         <h2 className="text-3xl md:text-4xl font-bold text-primary fade-up">
           Why should you choose WiseK9?
         </h2>
