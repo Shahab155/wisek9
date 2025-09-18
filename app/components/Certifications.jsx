@@ -62,9 +62,9 @@ export default function Certifications() {
           Professional Accreditations & Certifications
         </h2>
         <p className="text-xl text-gray-700 leading-relaxed">
-          Wise-K9 Limited holds SIA Approved Contractor Status for the Provision
+          WiseK9 Limited holds SIA Approved Contractor Status for the Provision
           of security guarding services. <br />
-          Wise-K9 is accredited by COP 119:2024 and maintains the highest
+          WiseK9 is accredited by COP 119:2024 and maintains the highest
           industry standards across all operations.
         </p>
       </div>

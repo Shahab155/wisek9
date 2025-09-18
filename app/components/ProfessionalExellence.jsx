@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Shield, CheckCircle2, MapPin, Clock } from "lucide-react";
+import { FaShieldAlt, FaCheckCircle, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -11,11 +11,9 @@ export default function ProfessionalExcellence() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (prefersReducedMotion) {
-      // Skip animations for users who prefer reduced motion
       gsap.set(".card", { opacity: 1, y: 0 });
       gsap.set(".icon-circle", { scale: 1 });
       return;
@@ -27,14 +25,11 @@ export default function ProfessionalExcellence() {
         opacity: 0,
         y: 50,
         duration: 1,
-        stagger: {
-          each: 0.2,
-          from: "start",
-        },
+        stagger: { each: 0.2, from: "start" },
         ease: "power3.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%", // Start when section is 80% in viewport
+          start: "top 80%",
           toggleActions: "play none none none",
         },
       });
@@ -51,7 +46,7 @@ export default function ProfessionalExcellence() {
         },
       });
 
-      // Hover effects for cards
+      // Hover effects
       document.querySelectorAll(".card").forEach((card) => {
         card.addEventListener("mouseenter", () => {
           gsap.to(card, {
@@ -74,27 +69,27 @@ export default function ProfessionalExcellence() {
       });
     }, sectionRef);
 
-    return () => ctx.revert(); // Clean up animations
+    return () => ctx.revert();
   }, []);
 
   const cards = [
     {
-      icon: <Shield className="w-10 h-10 text-white" />,
+      icon: <FaShieldAlt className="w-10 h-10 text-white" />,
       title: "SIA Approved Contractor",
       desc: "Officially recognized by the Security Industry Authority for maintaining the highest professional standards in security services.",
     },
     {
-      icon: <CheckCircle2 className="w-10 h-10 text-white" />,
+      icon: <FaCheckCircle className="w-10 h-10 text-white" />,
       title: "COP 119:2024 Certified",
       desc: "Accredited under the latest Code of Practice for security guarding, ensuring compliance with current industry regulations.",
     },
     {
-      icon: <MapPin className="w-10 h-10 text-white" />,
+      icon: <FaMapMarkerAlt className="w-10 h-10 text-white" />,
       title: "87% UK Coverage",
       desc: "Extensive nationwide presence covering 87% of the UK, providing reliable security solutions across England, Scotland, and Wales.",
     },
     {
-      icon: <Clock className="w-10 h-10 text-white" />,
+      icon: <FaClock className="w-10 h-10 text-white" />,
       title: "24/7 Operations",
       desc: "Round-the-clock security services with continuous monitoring and rapid response capabilities for complete peace of mind.",
     },
@@ -108,7 +103,7 @@ export default function ProfessionalExcellence() {
     >
       {/* Heading */}
       <h2 className="text-3xl md:text-5xl lg:text-6xl font-primary text-primary mb-4">
-        Professional Excellence 
+        Professional Excellence
       </h2>
       <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-lg leading-relaxed">
         Our commitment to excellence is demonstrated through industry-leading

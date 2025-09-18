@@ -72,7 +72,7 @@ export default function AboutSection() {
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-primary text-primary fade-up">About Us</h2>
         <p className="mt-4 text-lg text-secondary max-w-2xl mx-auto fade-up">
-          Wise-K9 is among the leading security companies that help you solve
+          WiseK9 is among the leading security companies that help you solve
           your security needs.
         </p>
         <h3 className="mt-8 text-2xl md:text-3xl font-bold text-black fade-up">
@@ -98,7 +98,7 @@ export default function AboutSection() {
         <div className="bg-white rounded-2xl shadow-lg p-8 fade-up">
           <p className="text-secondary leading-relaxed mb-6">
             We operate across the UK and provide construction and event security
-            for your safety. As a result, Wise-K9 has become a trusted security
+            for your safety. As a result, WiseK9 has become a trusted security
             partner in the UK.
           </p>
           <p className="text-secondary leading-relaxed mb-6">
@@ -128,7 +128,7 @@ export default function AboutSection() {
       {/* ----------- PART 3: Why Choose Us ----------- */}
       <div className="bg-gray-100 rounded-3xl shadow-sm max-w-7xl mx-auto p-10 md:p-16 text-center fade-up">
         <h2 className="text-3xl md:text-4xl font-bold text-primary fade-up">
-          Why should you choose Wise-K9?
+          Why should you choose WiseK9?
         </h2>
         <p className="mt-6 text-secondary text-lg max-w-4xl mx-auto fade-up">
           Renowned for a reliable, excellent security company. We always strive

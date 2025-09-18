@@ -61,7 +61,7 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-300">
-        © 2024 Wise-K9 Security Services. All rights reserved. | Your Safety, Our Mission | Developed by 
+        © 2024 WiseK9 Security Services. All rights reserved. | Your Safety, Our Mission | Developed by 
         <a href="https://irisxoft.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1">
           irisxoft.com
         </a>

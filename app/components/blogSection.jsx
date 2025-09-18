@@ -44,7 +44,7 @@ const BlogSection = () => {
       id: 1,
       title: "London Doesn't Wait, and Neither Should Your Security",
       description:
-        "In the fast-paced environment of London, security threats evolve rapidly. Discover why proactive security measures are essential for businesses operating in the capital and how Wise-K9 provides immediate response solutions.",
+        "In the fast-paced environment of London, security threats evolve rapidly. Discover why proactive security measures are essential for businesses operating in the capital and how WiseK9 provides immediate response solutions.",
       img: "/images/blogs/1.jpeg",
       date: "18 Sept, 2025",
       alt: "Frontend development illustration",
