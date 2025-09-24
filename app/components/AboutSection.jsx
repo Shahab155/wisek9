@@ -95,7 +95,7 @@ export default function AboutSection() {
       {/* ----------- PART 2: UK Coverage ----------- */}
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         {/* Left Text */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 fade-up">
+        <div className="bg-white rounded-2xl shadow-lg p-8 fade-right">
           <p className="text-secondary leading-relaxed mb-6">
             We operate across the UK and provide construction and event security
             for your safety. As a result, WiseK9 has become a trusted security
@@ -116,7 +116,7 @@ export default function AboutSection() {
         </div>
 
         {/* Right Image */}
-        <div className="fade-up">
+        <div className="fade-left">
           <img
             src="/images/about/aboutSec.jpg"
             alt="Security Guard"
